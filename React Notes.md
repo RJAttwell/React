@@ -6,3 +6,17 @@ React Notes:
 - Can combine small amounts of HTML, CSS and JS into a component
 
 - CodeSandbox - An online code editor for React
+
+- In body section, must have a div with an id of 'root'.
+- Ex: <div id="root"></div>
+- Will see in any react app. The root of the react application. Everything created using react will be placed inside this div.
+
+- Inside react is babel, a JS compiler. Can compile JSX down to normal JavaScript.
+- JSX combines HTML and JS.
+- Can place HTML into a JS file.
+
+- Can place JS inside the HTML that is inside the other JS.
+- Can create a constant and then refer to it inside the HTML by placing it inside curly braces.
+- Example:
+    - const name = "Richard";
+    - <h1>Hello {name}</h1>
