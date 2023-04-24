@@ -20,3 +20,5 @@ React Notes:
 - Example:
     - const name = "Richard";
     - <h1>Hello {name}</h1>
+
+- Can place any JS expression inside but cannot write JS statements (if statements, etc.)
