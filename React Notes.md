@@ -22,3 +22,24 @@ React Notes:
     - <h1>Hello {name}</h1>
 
 - Can place any JS expression inside but cannot write JS statements (if statements, etc.)
+
+Course Challenge #1:
+
+- Create app that displays 2 paragraph HTML Elements
+- "Created by [YOURNAME]" and "Copyright [CURRENTYEAR]
+- Solution:
+
+    import "./styles.css";
+
+    const name = "Richard";
+    const date = new Date();
+    const currentYear = date.getFullYear();
+
+    export default function App() {
+        return (
+            <div className="App">
+                <p>Created by {name}</p>
+                <p>Copyright {currentYear}</p>
+            </div>
+        );
+    }
