@@ -1,0 +1,51 @@
+import "./styles.css";
+
+const name = "Richard";
+const date = new Date();
+const currentYear = date.getFullYear();
+
+const img =
+  "https://fastly.picsum.photos/id/10/2500/1667.jpg?hmac=J04WWC_ebchx3WwzbM-Z4_KC_LeLBWr5LZMaAkWkF68";
+
+export default function App() {
+  return (
+    <div className="App">
+      <h1 className="heading" contentEditable="true" spellCheck="false">
+        My Favourite Foods
+      </h1>
+
+      <img
+        className="pizzaImage"
+        src="https://www.qsrmagazine.com/sites/default/files/styles/story_page/public/2022-01/PizzaHutPizza.jpg?itok=LtQPYOGK"
+        alt="A pepperoni pizza, two slices are being picked up"
+      />
+      <img
+        className="sandwichImage"
+        src="https://www.fastfoodcalories.com/wp-content/uploads/2019/09/Popeyes-New-Spicy-Chicken-Sandwich.jpg"
+        alt="A photo of a popeyes chicken sandwich. Bun, crispy chicken breast, pickles and bottom bun."
+      />
+      <img
+        className="pineappleImage"
+        src="https://www.thespruceeats.com/thmb/2Pdkzy-BBOBG74eziXqSj3hwDeI=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/SES-history-of-the-pineapple-1807645-343418eb3b4c41b1b956d3c702550a07.jpg"
+        alt="A photo of two Pineapples, one is cut"
+      />
+      <img
+        className="sourPatchImage"
+        src="https://www.auntynellies.ie/wp-content/uploads/2022/06/Sour-Patch-Kids-Watermelon-Theatre-Box.jpg"
+        alt="A box of sour patch kids watermelon"
+      />
+
+      <ul>
+        <li>Pizza</li>
+        <li>Chicken Sandwiches</li>
+        <li>Pineapple</li>
+        <li>Sour Patch Kids</li>
+      </ul>
+
+      <img className="picsumImage" src={img}></img>
+
+      <p>Created by {name}</p>
+      <p>Copyright {currentYear}</p>
+    </div>
+  );
+}
