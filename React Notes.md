@@ -42,4 +42,31 @@ Course Challenge #1:
                 <p>Copyright {currentYear}</p>
             </div>
         );
-    }
+    };
+
+- Just like in regular HTML/CSS, it is recommended to assign classes to your elements and then editing the style in a seperate CSS folder. But instead of using "class", we use "className".
+
+- Ex:   <h1 className="heading" contentEditable="true" spellCheck="false">
+        My Favourite Foods
+        </h1>
+
+- For all React attributes with more than one word it has to have the second word capitalised. E.g: className, contentEditable.
+
+- There's only a few certain cases where we need inline styling for react elements such as on the fly styling.
+
+- Instead of font-size in vanilla CSS, it must be written like "fontSize".
+
+- Value of these key value pairs must be a string.
+
+- Functions in React must be pascal case. The first letter of each compound word in a variable is capitalized. 
+
+Creating a new React App:
+
+- Go to terminal and type in 
+- To start, use "npm start"
+
+React Dev Tools:
+- Shows react DOM tree
+- By clicking on components in the dev tools, you can see the props being parsed.
+- Get React Dev tools by getting extension on chrome/firefox
+- 
