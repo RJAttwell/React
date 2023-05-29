@@ -19,8 +19,10 @@ export default function App() {
 
     if (itemText !== "") {
       setItemList((prevItems) => [...prevItems, itemText]);
-      setItemText("");
     }
+    
+    setItemText("");
+
   }
 
   function handleChange(event) {
